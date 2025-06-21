@@ -1,9 +1,9 @@
-
 {
   "name": "wa-automate-bot",
   "version": "1.0.0",
   "main": "wa-automate-server.js",
   "scripts": {
+    "postinstall": "puppeteer install",
     "start": "node wa-automate-server.js"
   },
   "dependencies": {
