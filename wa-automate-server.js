@@ -46,7 +46,7 @@ create({
   headless: true,
   qrTimeout: 0,
   multiDevice: true,
-  executablePath: puppeteer.executablePath()
+  executablePath: require('puppeteer').executablePath()
 }).then(async client => {
   const groupId = await getGroupId();
   console.log('✅ Connected to WhatsApp, using group:', groupId);
